@@ -103,7 +103,7 @@ public class DatabaseHelper {
 		statement.execute(answersTable);
 
 		String feedbackTable = "CREATE TABLE IF NOT EXISTS Feedback ("
-				+ "id INT AUTO_INCREMENT PRIMARY KEY, "
+				+ "id INT AUTO_INCREMENT PRIMARY KEY, " 	
 				+ "questionId INT, "
 				+ "questionOwnerId INT, "
 				+ "reviewerId INT, "

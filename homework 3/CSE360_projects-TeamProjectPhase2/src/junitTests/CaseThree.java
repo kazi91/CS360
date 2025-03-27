@@ -14,9 +14,9 @@ class CaseThree {
 	
 	
 	// method used to create test questions for the class
-	 private void addTestQuestion(DatabaseHelper dbHelper, int userId, String questionText) throws SQLException {
-	        if (questionText != null && !questionText.trim().isEmpty()) {
-	            dbHelper.createQuestion(userId, questionText);
+	private void addTestQuestion(DatabaseHelper dbHelper, int userId, String questionText) throws SQLException {
+		if (questionText != null && !questionText.trim().isEmpty()) {
+			dbHelper.createQuestion(userId, questionText);
 	        }
 	    }
 	
