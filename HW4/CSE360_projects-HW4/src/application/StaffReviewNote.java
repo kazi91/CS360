@@ -8,6 +8,9 @@ import javafx.stage.Stage;
 import java.sql.SQLException;
 import java.util.Optional;
 
+/**
+ * This class allows the staff to leave a note on reviews 
+ */
 
 public class StaffReviewNote {
 	

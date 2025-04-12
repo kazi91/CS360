@@ -11,7 +11,9 @@ import javafx.stage.Stage;
 import java.sql.SQLException;
 import java.util.List;
 
-
+/**
+ * This class allows staff users to view questions and leave notes on reviews 
+ */
 
 public class StaffSelectQuestion {
 	
@@ -54,6 +56,8 @@ public class StaffSelectQuestion {
 	        }
 	        table.setItems(items);
 
+	        
+	        // select question and leave note
 	        Button selectButton = new Button("Select Question");
 	        selectButton.setOnAction(e -> {
 	            QuestionItem selected = table.getSelectionModel().getSelectedItem();

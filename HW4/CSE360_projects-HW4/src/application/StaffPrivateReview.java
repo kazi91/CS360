@@ -14,7 +14,7 @@ import java.util.List;
 import application.ReviewerReviewManagement.FeedbackItem;
 
 /**
- * This page allows Staff to view private reviews made by reviewers
+ * This page allows Staff to view private reviews made by students
  */
 
 public class StaffPrivateReview {

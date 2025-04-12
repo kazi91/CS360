@@ -13,6 +13,9 @@ import java.util.List;
 
 import application.StudentSelectAnswer.AnswerItem;
 
+/**
+ * This class allows staff to view answers and leave notes on reviews 
+ */
 
 public class StaffSelectAnswer {
 	 private final DatabaseHelper databaseHelper;
@@ -53,6 +56,8 @@ public class StaffSelectAnswer {
 	        }
 	        table.setItems(items);
 
+	        // select answer and leave note 
+	        
 	        Button selectButton = new Button("Select Answer");
 	        selectButton.setOnAction(e -> {
 	            AnswerItem selected = table.getSelectionModel().getSelectedItem();

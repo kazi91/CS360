@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 /**
  * This page displays a welcome message and displays buttons to allow staff users 
- * the ability to view questions, answers, and private feedback.  
+ * the ability to view questions, answers, private feedback, and view flagged items.   
  */
 
 public class StaffHomePage {
@@ -32,14 +32,18 @@ public class StaffHomePage {
 	    Button selectQuestionButton = new Button("View a List of Questions");
 		selectQuestionButton.setOnAction(e -> new StaffSelectQuestion(databaseHelper, user).show(primaryStage));
 		
+		 // button to view answers
 		Button selectAnswerButton = new Button("View a list of Answers");
 		selectAnswerButton.setOnAction(e -> new StaffSelectAnswer(databaseHelper, user).show(primaryStage));
-
+		
+		// button to view feedback 
 		Button selectFeedbackButton = new Button("View Private Feedback From Students");
 		selectFeedbackButton.setOnAction(e -> new StaffPrivateReview(databaseHelper).show(primaryStage, user));
  
-		Button selectFlaggedPostButton = new Button("View list of flagged posts");
-		selectFlaggedPostButton.setOnAction(e -> new StaffFlaggedPostReview(databaseHelper, user).show(primaryStage));
+		// button to view list of flagged posts (couldn't implement this so it is commented out) 
+		
+		//Button selectFlaggedPostButton = new Button("View list of flagged posts");
+		//selectFlaggedPostButton.setOnAction(e -> new StaffFlaggedPostReview(databaseHelper, user).show(primaryStage));
  
 	    
 	    // button to back out of staff home page and return to the welcome login page
